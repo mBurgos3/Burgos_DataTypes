@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>MainActivity.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+.s4 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+MainActivity.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">mcm.edu.ph.burgos_datatypes</span><span class="s0">;</span>
+
+<span class="s0">import </span><span class="s1">androidx.appcompat.app.AppCompatActivity</span><span class="s0">;</span>
+
+<span class="s0">import </span><span class="s1">android.content.res.ColorStateList</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.os.Bundle</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.widget.TextView</span><span class="s0">;</span>
+
+<span class="s0">public class </span><span class="s1">MainActivity </span><span class="s0">extends </span><span class="s1">AppCompatActivity {</span>
+
+    <span class="s1">@Override</span>
+    <span class="s0">protected void </span><span class="s1">onCreate(Bundle savedInstanceState) {</span>
+        <span class="s0">super</span><span class="s1">.onCreate(savedInstanceState)</span><span class="s0">;</span>
+        <span class="s1">setContentView(R.layout.activity_main)</span><span class="s0">;</span>
+
+        <span class="s1">TextView display</span><span class="s0">;</span>
+
+        <span class="s1">display = findViewById(R.id.Text)</span><span class="s0">;</span>
+
+        <span class="s1">String textdisplay = </span><span class="s2">&quot;</span><span class="s0">\b</span><span class="s2">&quot;</span><span class="s1">+</span><span class="s2">&quot;Burgos, Mars&quot;</span><span class="s0">;</span>
+
+        <span class="s1">display.setText(textdisplay)</span><span class="s0">;</span>
+
+        <span class="s0">double </span><span class="s1">Power_Level = </span><span class="s3">9000.0</span><span class="s0">;</span>
+
+        <span class="s0">double </span><span class="s1">WAWARTS = </span><span class="s3">1000000.0</span><span class="s0">;</span>
+
+        <span class="s0">int </span><span class="s1">Age = </span><span class="s3">18</span><span class="s0">;</span>
+
+        <span class="s4">//double into String</span>
+        <span class="s4">//Double.parsedouble =&gt; converts datatypes to double</span>
+        <span class="s4">//integer.parseInt =&gt; converts datatypes to int</span>
+        <span class="s4">//String.valueOf =&gt; converts datatypes to string</span>
+
+
+        <span class="s4">//String.valueOf(Power_Level);</span>
+        <span class="s1">display.setText(String.valueOf(Power_Level))</span><span class="s0">;</span>
+        <span class="s1">display.setText(</span><span class="s2">&quot;I wasborn with a name of:&quot;</span><span class="s1">+textdisplay+ </span><span class="s2">&quot;</span><span class="s0">\n</span><span class="s2">&quot;</span><span class="s1">+</span><span class="s2">&quot;V-Bucks:&quot;</span><span class="s1">+</span><span class="s2">&quot;</span><span class="s0">\b</span><span class="s2">&quot;</span><span class="s1">+(String.valueOf(WAWARTS) + </span><span class="s2">&quot;</span><span class="s0">\n </span><span class="s2">&quot;</span><span class="s1">+</span><span class="s2">&quot;Power Level:</span><span class="s0">\b</span><span class="s2">&quot;</span><span class="s1">+String.valueOf(Power_Level)+</span><span class="s2">&quot;</span><span class="s0">\n</span><span class="s2">Birthdate: 12/06/2002&quot;</span><span class="s1">+</span><span class="s2">&quot;</span><span class="s0">\n</span><span class="s2">Age:</span><span class="s0">\b</span><span class="s2">&quot;</span><span class="s1">+(String.valueOf(Age))))</span><span class="s0">;</span>
+
+        <span class="s0">boolean </span><span class="s1">Naa_Bay_Uyab = </span><span class="s0">false;</span>
+
+    <span class="s1">}</span>
+<span class="s1">}</span></pre>
+</body>
+</html>
